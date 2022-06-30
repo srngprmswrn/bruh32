@@ -10,10 +10,9 @@ then
 else
     echo "Neither Positive Nor Negative"
 fi
-Output
-Enter a number 
-5
-Positive
+
+
+
 2) Biggest of Three Numbers
 echo "Enter Num1"
 read num1
@@ -31,6 +30,9 @@ then
 else
     echo "Biggest Number="$num3
 fi
+
+
+
 3) Sum of digits
 echo "Enter a number"
 read num
@@ -45,6 +47,10 @@ do
 done
 
 echo $sum
+
+
+
+
 4) Sum of first n natural numbers
 echo "Enter how many nos u want to : "
 read n
@@ -54,6 +60,10 @@ do
 s=`expr $s + $i`
 done
 echo “Sum of first $n = $s”
+
+
+
+
 5) Sum of first n odd numbers
 echo "Enter how many nos u want to : "
 read n
@@ -63,6 +73,10 @@ do
 s=`expr $s + $i`
 done
 echo “Sum of odd upto $n = $s”
+
+
+
+
 6) Sum of first n even numbers
 echo "Enter how many nos u want to : "
 read n
@@ -72,6 +86,11 @@ do
 s=`expr $s + $i`
 done
 echo “Sum of even upto $n = $s”
+
+
+
+
+
 7) Sum of arrays
 arr=(10 20 30 40 50)
 
@@ -83,6 +102,11 @@ do
 done
 
 echo $sum
+
+
+
+
+
 8) Add two variables using functions
 function add()
 {
@@ -94,6 +118,11 @@ a=10
 b=20
 #call the add function and pass the values
 add $a $b
+
+
+
+
+
 9) Shell scripts to compare two strings
 read -p "Enter two strings: " str1 str2
 
@@ -103,6 +132,10 @@ then
 else
     echo "Un Equal"
 fi
+
+
+
+
 
 dining philosopher
 #include<stdio.h>
@@ -157,6 +190,12 @@ void eat(int phil)
 	printf("\nPhilosopher %d is eating",phil);
 }
 
+
+
+
+
+
+
 fcfs
 #include<stdio.h>
  
@@ -202,6 +241,11 @@ int main()
     return 0;
 }
 
+
+
+
+
+
 overlay 
 1. 
 #include<stdio.h>
@@ -212,6 +256,10 @@ void main() {
    printf("This wouldn't print\n");
    return;
 }
+
+
+
+
 
 2.
 #include<stdio.h>
@@ -234,6 +282,11 @@ void main() {
    }
    return;
 }
+
+
+
+
+
 
 3.
 #include<stdio.h>
@@ -274,6 +327,11 @@ void main(int argc, char *argv[0]) {
 }
 
 
+
+
+
+
+
 pipe
 #include<stdio.h>
 #include<unistd.h>
@@ -300,6 +358,11 @@ write(1,buffer,n);
 }
 return 0;
 }
+
+
+
+
+
 
 
 priority
@@ -450,6 +513,11 @@ int main()
 }
 
 
+
+
+
+
+
 priority2
 #include <stdio.h>
 
@@ -555,6 +623,12 @@ void main()
    
    printf("AvgWaittingTime = %d\nAvgTurnaroundTime = %d\n",AvgWT/pn,AVGTaT/pn);
 }
+
+
+
+
+
+
 
 writer(reader)
 //g++ -pthread readwrite.cpp -o readwrite
@@ -723,6 +797,13 @@ int main()
 }
 
 
+
+
+
+
+
+
+
 reader
 #include <iostream>
 #include <sys/ipc.h>
@@ -737,6 +818,14 @@ int main(){
 	shmdt ( str ) ;
 	shmctl ( shmid , IPC_RMID , NULL ) ;
 	return 0;}
+
+
+
+
+
+
+
+
 
 writing(shared)
 #include <stdio.h>
@@ -760,6 +849,12 @@ int main()
 	printf("You wrote: %s\n", (char *)shared_memory);
 }
 
+
+
+
+
+
+
 reading(shared)
 #include <stdio.h>
 #include <stdlib.h>
@@ -778,6 +873,13 @@ int main()
 	printf("Process attached at %p\n", shared_memory);
 	printf("Data read from shared memory is: %s\n", (char *)shared_memory);
 }
+
+
+
+
+
+
+
 
 
 roundrobin c
@@ -834,6 +936,12 @@ int main()
   
   return 0;
 }
+
+
+
+
+
+
 
 
 roundrobin cpp
@@ -963,6 +1071,12 @@ int main()
 }
 
 
+
+
+
+
+
+
 semaphore
 // C program to demonstrate working of Semaphores
 // gcc semaphore.c -o semaphore -lpthread -lrt
@@ -1002,6 +1116,12 @@ int main()
 	sem_destroy(&mutex);
 	return 0;
 }
+
+
+
+
+
+
 
 sjf
 #include<stdio.h>
